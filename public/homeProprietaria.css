@@ -1,0 +1,116 @@
+/* homeProprietaria.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.graficos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.grafico {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.grafico h2 {
+    margin-bottom: 15px;
+    color: #133f5a;
+}
+
+.consultas-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.consultas-section {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.consultas-section h2 {
+    margin-bottom: 15px;
+    color: #133f5a;
+}
+
+#consultasAgendadas,
+#consultasConcluidas {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.mostrar-mais {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.mostrar-mais:hover {
+    background-color: #103c58;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #103c58;
+}
+
+@media (max-width: 768px) {
+    .graficos, .consultas-container {
+        flex-direction: column;
+    }
+    .grafico, .consultas-section {
+        margin: 10px 0;
+    }
+}

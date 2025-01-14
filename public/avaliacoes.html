@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avaliacoes.css">
+    <title>Avaliações de Serviços - Estética</title>
+</head>
+<body>
+    <!-- Container principal da página -->
+    <div class="container">
+         <!-- Título principal da página -->
+        <h1>Avaliações de Serviços</h1>
+<!-- Formulário para envio de avaliações -->
+        <div class="avaliacao-form">
+            <h2>Deixe sua avaliação </h2>
+            <form id="formAvaliacao">
+                <!-- Dropdown para seleção de serviços -->
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione o serviço</option>
+                <!-- Opções de serviços serão adicionadas dinamicamente -->
+                </select>
+                <!-- Avaliação em estrelas com acessibilidade -->
+                <div class="estrelas" role="group" aria-labelledby="rating-label">
+                    <span id="rating-label" class="visually-hidden">Avaliação em estrelas</span>
+                    <input type="radio" id="cm_star-5" name="estrelas" value="5" required/>
+                    <label for="cm_star-5"></label>
+                    <input type="radio" id="cm_star-4" name="estrelas" value="4"/>
+                    <label for="cm_star-4"></label>
+                    <input type="radio" id="cm_star-3" name="estrelas" value="3"/>
+                    <label for="cm_star-3"></label>
+                    <input type="radio" id="cm_star-2" name="estrelas" value="2"/>
+                    <label for="cm_star-2"></label>
+                    <input type="radio" id="cm_star-1" name="estrelas" value="1"/>
+                    <label for="cm_star-1"></label>
+                </div>
+                <!-- Campo de texto para comentário -->
+                <textarea id="comentario" name="comentario" placeholder="Deixe seu comentário (opcional)" rows="4"></textarea>
+                 <!-- Botão para envio da avaliação -->
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </div>
+<!-- Seção para exibição de avaliações existentes -->
+        <div class="avaliacoes-existentes">
+            <h2>Avaliações de outros usuários</h2>
+             <!-- Lista de avaliações será populada dinamicamente -->
+            <div id="listaAvaliacoes">
+                
+            </div>
+        </div>
+    </div>
+<!-- Script externo para lógica da página -->
+    <script src="/js/avaliacoes.js"></script>
+</body>
+</html>

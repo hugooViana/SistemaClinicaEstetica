@@ -1,0 +1,65 @@
+body, html {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    font-family: Arial, sans-serif; /* Define Arial como fonte principal, e sans-serif como alternativa */
+    height: 100%; /* Define que o body e o html ocupem 100% da altura da viewport */
+}
+
+.container {
+    display: flex; /* Usa flexbox para organizar o layout */
+    flex-direction: column; /* Organiza os itens em uma coluna (verticalmente) */
+    min-height: 100vh; /* Garante que o contêiner ocupe pelo menos 100% da altura da viewport */
+}
+
+header {
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+    border-bottom: 1px solid #e0e0e0; /* Adiciona uma borda inferior cinza clara para separar visualmente o cabeçalho */
+}
+
+nav {
+    display: flex; /* Usa flexbox para organizar os links de navegação */
+    justify-content: space-between; /* Espaça os itens uniformemente entre os lados esquerdo e direito */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.nav-links {
+    display: flex; /* Organiza os links de navegação em linha */
+    gap: 20px; /* Define um espaço de 20px entre os links */
+}
+
+nav a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: black; /* Define a cor do texto dos links como preto */
+}
+
+.login-btn {
+    background-color: black; /* Define o fundo do botão de login como preto */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Define o padding interno do botão */
+    cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+    text-decoration: none; /* Remove sublinhado do texto dentro do botão */
+}
+
+main {
+    flex-grow: 1; /* Faz o elemento principal crescer para ocupar o espaço disponível */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.logo {
+    width: 500px; /* Define a largura da logo como 500px */
+    margin-bottom: 50px; /* Adiciona um espaçamento inferior de 50px abaixo da logo */
+}
+
+.agendar-btn {
+    background-color: black; /* Define o fundo do botão como preto */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Define o padding interno do botão */
+    cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+    text-decoration: none; /* Remove sublinhado do texto dentro do botão */
+    font-size: 18px; /* Define o tamanho da fonte do texto como 18px */
+}

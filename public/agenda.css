@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --danger-color: #f44336;
+    --background-color: #f5f5f5;
+    --card-background: white;
+    --text-color: #333;
+    --border-radius: 4px;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.container {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.calendario {
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.mes-ano {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+}
+
+.dias-semana {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.dia {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.dia:hover {
+    background-color: #d0d0d0;
+}
+
+.dia.tem-consulta {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dia.selecionado {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.dia.indisponivel {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.consultas {
+    margin-top: 1rem;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.consulta {
+    background-color: #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.form {
+    flex: 1;
+    min-width: 250px;
+}
+
+.form h2 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+#marcarDisponivel {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+    }
+}

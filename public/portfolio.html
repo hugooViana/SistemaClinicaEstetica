@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portifolho.css">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho da página com título principal e subtítulo -->
+    <header>
+        <h1>Meu Portfólio</h1>
+        <!-- Subtítulo com uma breve introdução -->
+        <p class="subtitle">Bem-vindo ao meu mundo criativo</p>
+    </header>
+
+    <!-- Contêiner principal que agrupa as seções do portfólio -->
+    <div class="container">
+        <!-- Área onde os itens do portfólio serão listados dinamicamente -->
+        <div id="listaPortfolio"></div>
+
+        <!-- Seção para adicionar novos itens ao portfólio, oculta por padrão -->
+        <div id="adicionarPortfolio" style="display: none;">
+            <!-- Título da seção de adição -->
+            <h2>Adicionar ao Portfólio</h2>
+            <!-- Formulário para inserir novos dados no portfólio -->
+            <form id="portfolioForm">
+                <!-- Campo para o título do item -->
+                <input type="text" id="titulo" placeholder="Título" required>
+                <!-- Campo para a descrição do item -->
+                <textarea id="descricao" placeholder="Descrição" required></textarea>
+                <!-- Campo para a URL de uma imagem associada ao item -->
+                <input type="text" id="imagem" placeholder="URL da Imagem" required>
+                <!-- Botão para submeter o formulário -->
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script externo que gerencia a funcionalidade do portfólio -->
+    <script src="scripts.js"> </script>
+</body>
+</html>

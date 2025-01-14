@@ -1,0 +1,105 @@
+/* Define estilos gerais para todo o corpo e HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    height: 100%; /* Preenche toda a altura da tela */
+}
+
+/* Centraliza e limita a largura do conteúdo principal */
+.container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Alinhamento centralizado para títulos */
+h1, h2 {
+    text-align: center;
+}
+
+/* Estilo para formulários */
+form {
+    display: flex; /* Layout em coluna */
+    flex-direction: column;
+    max-width: 300px; /* Limita a largura */
+    margin: 0 auto; /* Centraliza */
+}
+
+/* Estilo para inputs, selects e textarea */
+input, select, textarea {
+    margin-bottom: 10px; /* Espaçamento entre elementos */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Bordas suaves */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo para botões */
+button {
+    padding: 10px;
+    background-color: #222222; /* Cor de fundo inicial */
+    color: white; /* Texto em branco */
+    border: none; /* Remove bordas padrão */
+    cursor: pointer; /* Indica botão clicável */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+button:hover {
+    background-color: #000000; /* Cor mais escura ao passar o mouse */
+}
+
+/* Layout para navegação */
+nav {
+    display: flex; /* Exibe itens em linha */
+    justify-content: space-around; /* Espaçamento uniforme */
+    margin-top: 20px; /* Margem superior */
+}
+
+/* Layout para gráficos */
+.graficos {
+    display: flex; /* Itens lado a lado */
+    justify-content: space-around; /* Espaçamento uniforme */
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 400px; /* Largura máxima dos gráficos */
+}
+
+/* Estilo para listas dinâmicas */
+#listaServicos, #listaPortfolio, #consultasAgendadas, #consultasRealizadas, #minhasConsultas {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilo para itens individuais */
+.servico-item, .portfolio-item, .consulta-item {
+    border: 1px solid #ddd; /* Borda leve */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre itens */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Mudança de fundo ao passar o mouse em itens de serviço */
+.servico-item:hover {
+    background-color: #f9f9f9; /* Fundo claro */
+}
+
+/* Grid para serviços */
+.grid-servicos {
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automaticamente */
+    gap: 20px; /* Espaçamento entre itens */
+}
+
+/* Estilo adicional para itens de consulta */
+.consulta-item {
+    border: 1px solid #ddd; /* Bordas leves */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Cantos levemente arredondados */
+}
+
+.consulta-item h3 {
+    margin-top: 0; /* Remove margem superior */
+    color: #333; /* Cor do título */
+}

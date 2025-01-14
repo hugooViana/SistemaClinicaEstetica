@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Serviço</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal da página -->
+        <h1>Detalhes do Serviço</h1>
+
+        <!-- Seção para exibir informações detalhadas do serviço -->
+        <div id="servicoDetalhes">
+            <h2 id="nomeServico"></h2> <!-- Nome do serviço (preenchido dinamicamente) -->
+            <p id="descricaoServico"></p> <!-- Descrição do serviço -->
+            <p id="precoServico"></p> <!-- Preço do serviço -->
+        </div>
+
+        <!-- Formulário para o agendamento do serviço -->
+        <form id="formAgendamento">
+            <!-- Campo para selecionar a data do agendamento -->
+            <div>
+                <label for="dataAgendamento">Data:</label>
+                <input type="date" id="dataAgendamento" required> <!-- Validação obrigatória -->
+            </div>
+
+            <!-- Campo para selecionar o horário disponível para o serviço -->
+            <div>
+                <label for="horarioAgendamento">Horário:</label>
+                <select id="horarioAgendamento" required>
+                    <option value="">Selecione um horário</option> <!-- Opção inicial padrão -->
+                </select>
+            </div>
+
+            <!-- Botão para submeter o formulário de agendamento -->
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+    <!-- Script externo para lidar com lógica e interatividade -->
+    <script src="scripts.js"></script>
+</body>
+</html>

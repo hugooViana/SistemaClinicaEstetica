@@ -1,0 +1,186 @@
+/* Definição de variáveis CSS no :root para facilitar a manutenção e personalização do esquema de cores */
+:root {
+    --primary-color: #4a4a4a; /* Cor principal para texto e elementos principais */
+    --secondary-color: #f5a623; /* Cor secundária para destaque, como estrelas */
+    --background-color: #f8f9fa; /* Cor de fundo da página */
+    --text-color: #333; /* Cor de texto primário */
+    --border-color: #e0e0e0; /* Cor de borda de elementos */
+    --hover-color: #3a3a3a; /* Cor ao passar o mouse sobre elementos clicáveis */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Cor de sombra para dar profundidade */
+}
+
+/* Estilo básico do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte principal */
+    line-height: 1.6; /* Espaçamento entre as linhas para legibilidade */
+    color: var(--text-color); /* Usa a variável para a cor do texto */
+    background-color: var(--background-color); /* Cor de fundo da página */
+    margin: 0; /* Remove a margem padrão */
+    padding: 20px; /* Adiciona espaçamento interno para o corpo */
+}
+
+/* Container centralizado que envolve o conteúdo principal */
+.container {
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    margin: auto; /* Centraliza o container horizontalmente */
+    background-color: #ffffff; /* Cor de fundo do container */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 30px var(--shadow-color); /* Sombra para dar profundidade */
+    padding: 40px; /* Espaçamento interno do container */
+}
+
+/* Estilo para os cabeçalhos h1 e h2 */
+h1, h2 {
+    color: var(--primary-color); /* Usa a cor primária para os cabeçalhos */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Estilo específico para o h1 */
+h1 {
+    font-size: 2.8em; /* Tamanho de fonte grande */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+/* Estilo específico para o h2 */
+h2 {
+    font-size: 2em; /* Tamanho de fonte um pouco menor que o h1 */
+    border-bottom: 2px solid var(--border-color); /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço interno abaixo do título */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+/* Estilo comum para os formulários e as avaliações existentes */
+.avaliacao-form, .avaliacoes-existentes {
+    background-color: #ffffff; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+    margin-bottom: 30px; /* Espaço abaixo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px var(--shadow-color); /* Sombra suave */
+}
+
+/* Estilo para as estrelas de avaliação */
+.estrelas {
+    font-size: 40px; /* Tamanho das estrelas */
+    color: #ddd; /* Cor padrão das estrelas */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Centraliza as estrelas */
+    margin-bottom: 20px; /* Espaço abaixo */
+    flex-direction: row-reverse; /* Organiza as estrelas da direita para a esquerda */
+}
+
+/* Esconde os inputs de rádio (estrelas) */
+.estrelas input[type="radio"] {
+    display: none;
+}
+
+/* Estilo para o rótulo das estrelas */
+.estrelas label {
+    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    padding: 0 5px; /* Espaçamento entre as estrelas */
+    transition: color 0.2s ease-in-out; /* Animação suave na troca de cor */
+}
+
+/* Insere o símbolo de estrela antes do texto do rótulo */
+.estrelas label:before {
+    content: '\2605'; /* Símbolo de estrela */
+}
+
+/* Muda a cor das estrelas quando o input de rádio é selecionado */
+.estrelas input[type="radio"]:checked ~ label {
+    color: var(--secondary-color); /* Cor da estrela quando selecionada */
+}
+
+/* Estilo para os campos de texto (textarea) e seleção (select) */
+textarea, select {
+    width: 100%; /* Campos ocupam toda a largura disponível */
+    padding: 12px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço abaixo dos campos */
+    border: 1px solid var(--border-color); /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s ease; /* Animação suave na borda ao focar */
+}
+
+/* Estilo para os campos de texto e seleção quando em foco */
+textarea:focus, select:focus {
+    outline: none; /* Remove a borda padrão de foco */
+    border-color: var(--primary-color); /* Muda a cor da borda */
+    box-shadow: 0 0 5px rgba(74, 74, 74, 0.5); /* Adiciona sombra ao redor */
+}
+
+/* Estilo para os botões */
+button {
+    background-color: var(--primary-color); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 14px 24px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animações de transição */
+    width: 100%; /* Largura total */
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: var(--hover-color); /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Estilo para cada item de avaliação */
+.avaliacao-item {
+    border-bottom: 1px solid var(--border-color); /* Linha de separação entre itens */
+    padding: 20px 0; /* Espaço interno entre os itens */
+}
+
+/* Remove a borda do último item */
+.avaliacao-item:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para a classificação em estrelas na avaliação */
+.avaliacao-estrelas {
+    color: var(--secondary-color); /* Cor das estrelas */
+    font-size: 22px; /* Tamanho das estrelas */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Estilo para o nome do serviço avaliado */
+.avaliacao-servico {
+    font-weight: bold; /* Deixa o nome do serviço em negrito */
+    margin-bottom: 5px; /* Espaço abaixo do nome */
+}
+
+/* Estilo para o comentário da avaliação */
+.avaliacao-comentario {
+    font-style: italic; /* Deixa o comentário em itálico */
+    color: #666; /* Cor do texto do comentário */
+}
+
+/* Estilos responsivos para dispositivos com largura máxima de 600px */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Menos espaço interno no container */
+    }
+    h1 {
+        font-size: 2.2em; /* Tamanho menor para o título */
+    }
+    h2 {
+        font-size: 1.7em; /* Tamanho menor para o subtítulo */
+    }
+}
+
+/* Classe para elementos com acessibilidade visual oculta */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden; /* Esconde completamente o conteúdo */
+    clip: rect(0, 0, 0, 0); /* Clip invisível */
+    white-space: nowrap; 
+    word-spacing: normal; 
+}

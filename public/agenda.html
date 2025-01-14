@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Agenda - Estética</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho do calendário: navegação entre meses -->
+        <div class="calendario">
+            <div class="cabecalho">
+                <button id="mes-anterior" aria-label="Mês anterior">&lt;</button>
+                <!-- Exibição dinâmica do mês e ano atual -->
+                <div class="mes-ano" id="mes-ano"></div>
+                <button id="proximo-mes" aria-label="Próximo mês">&gt;</button>
+            </div>
+            
+            <!-- Contêiner dinâmico para os dias do mês -->
+            <div class="dias" id="dias"></div>
+        </div>
+
+        <!-- Botão para marcar um dia como disponível -->
+        <button id="marcarDisponivel">Marcar como Disponível</button>
+
+        <!-- Seção de agendamento de consultas -->
+        <div class="form-container">
+            <div class="form">
+                <h2>Agendar Consulta</h2>
+                <form id="agendarConsultaForm">
+                    <div class="form-group">
+                        <label for="nomeCliente">Nome do Cliente:</label>
+                        <input type="text" id="nomeCliente" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataConsulta">Data da Consulta:</label>
+                        <input type="date" id="dataConsulta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horarioConsulta">Horário da Consulta:</label>
+                        <input type="time" id="horarioConsulta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="Limpeza de Pele">Limpeza de Pele</option>
+                            <option value="Massagem Relaxante">Massagem Relaxante</option>
+                            <option value="Manicure">Manicure</option>
+                            <option value="Pedicure">Pedicure</option>
+                        </select>
+                    </div>
+                    <button type="submit">Agendar Consulta</button>
+                </form>
+            </div>
+
+            <!-- Formulário para definir dias indisponíveis -->
+            <div class="form">
+                <h2>Definir Dia Indisponível</h2>
+                <form id="definirIndisponivelForm">
+                    <div class="form-group">
+                        <label for="dataIndisponivel">Data Indisponível:</label>
+                        <input type="date" id="dataIndisponivel" required>
+                    </div>
+                    <button type="submit">Definir como Indisponível</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Seção para exibir consultas agendadas -->
+        <div id="consultas-container">
+            <h2>Consultas Agendadas</h2>
+            <div id="consultas"></div>
+        </div>
+    </div>
+
+    <script src="/js/agenda.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Juliana Pretti Estética 
+authors:
+  - family-names: Matheus
+    given-names: Jorge
+  - family-names: Pimentel
+    given-names: Gustavo
+  - family-names: Pretti
+    given-names: Matheus
+  - family-names: Viana
+    given-names: Hugo
+  - family-names: Arturo
+    given-names: Petrius
+  - family-names: Carvalho
+    given-names: Lucas
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Caram Santos de Oliveira
+    given-names: João
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Macêdo Neto
+    given-names: Cristiano
+keywords:
+  - Agendamento online
+  - Busca por serviços de estética
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-2-ti3-8981100-grupo-7-Estetica
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-10

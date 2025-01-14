@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Proprietária - Estética</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .graficos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .grafico {
+            width: 48%;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .consultas-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .consultas-section {
+            width: 48%;
+        }
+        .consulta-item {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .consulta-item button {
+            background-color: #1069a5;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 5px;
+        }
+        .consulta-item button:hover {
+            background-color: #194a6b;
+        }
+        .consulta-item button.cancelar {
+            background-color: #e74c3c;
+        }
+        .consulta-item button.cancelar:hover {
+            background-color: #c0392b;
+        }
+        .mostrar-mais {
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            background-color: #1069a5;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .mostrar-mais:hover {
+            background-color: #194a6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal do painel -->
+        <h1>Painel da Proprietária</h1>
+        
+        <!-- Seção de gráficos -->
+        <div class="graficos">
+            <div class="grafico">
+                <!-- Gráfico para visualização de dados financeiros -->
+                <h2>Dados Financeiros</h2>
+                <canvas id="graficoFinanceiro"></canvas>
+            </div>
+            <div class="grafico">
+                <!-- Gráfico para visualização de consultas realizadas por mês -->
+                <h2>Consultas por Mês</h2>
+                <canvas id="graficoConsultas"></canvas>
+            </div>
+        </div>
+        
+        <!-- Seção de consultas -->
+        <div class="consultas-container">
+            <div class="consultas-section">
+                <!-- Lista de consultas agendadas -->
+                <h2>Consultas Agendadas</h2>
+                <div id="consultasAgendadas"></div>
+                <!-- Botão para carregar mais consultas agendadas -->
+                <button id="mostrarMaisAgendadas" class="mostrar-mais">Mostrar mais</button>
+            </div>
+            <div class="consultas-section">
+                <!-- Lista de consultas concluídas -->
+                <h2>Consultas Concluídas</h2>
+                <div id="consultasConcluidas"></div>
+                <!-- Botão para carregar mais consultas concluídas -->
+                <button id="mostrarMaisConcluidas" class="mostrar-mais">Mostrar mais</button>
+            </div>
+        </div>
+
+        <!-- Navegação rápida para outras páginas relevantes -->
+        <div style="margin-top: 20px;">
+            <!-- Botão para gerenciar o portfólio -->
+            <button onclick="location.href='portfolio.html'">Gerenciar Portfólio</button>
+            <!-- Botão para acessar a agenda -->
+            <button onclick="location.href='agenda.html'">Agenda</button>
+
+        </div>
+    </div>
+
+    <!-- Inclusão do arquivo JavaScript para funcionalidade da página -->
+    <script src="scripts.js"></script>
+</body>
+</html>

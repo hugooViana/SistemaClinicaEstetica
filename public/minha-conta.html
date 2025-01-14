@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Sistema de Estética</title>
+    <link rel="stylesheet" href="minhaConta.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal da página -->
+        <h1>Minha Conta</h1>
+        
+        <!-- Seção para exibir os dados pessoais do usuário -->
+        <div id="dadosUsuario" class="card">
+            <h2>Dados Pessoais</h2>
+            <!-- Layout em grade para organizar os dados do usuário -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <!-- Rótulo e campo para exibir o nome do usuário -->
+                    <span class="info-label">Nome:</span>
+                    <span id="nomeUsuario"></span>
+                </div>
+                <div class="info-item">
+                    <!-- Rótulo e campo para exibir o e-mail do usuário -->
+                    <span class="info-label">E-mail:</span>
+                    <span id="emailUsuario"></span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Seção para exibir informações sobre as consultas do usuário -->
+        <div class="consultas-container card">
+            <h2>Minhas Consultas</h2>
+            
+            <!-- Botões de abas para alternar entre consultas agendadas e concluídas -->
+            <div class="tabs">
+                <!-- Aba ativa por padrão para mostrar consultas agendadas -->
+                <button class="tab-btn active" data-tab="agendadas">Consultas Agendadas</button>
+                <!-- Aba para alternar para consultas concluídas -->
+                <button class="tab-btn" data-tab="concluidas">Consultas Concluídas</button>
+            </div>
+    
+
+            <div id="agendadas" class="tab-content active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Serviço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaConsultasAgendadas">
+                        <!-- Consultas agendadas serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="concluidas" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaConsultasConcluidas">
+                        <!-- Consultas concluídas serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="servicos.html" class="btn primary">Agendar Nova Consulta</a>
+            <a href="mensagens.html" class="btn secondary">Ver Mensagens</a>
+        </div>
+    </div>
+
+    <script src="/js/minha-conta.js">
+
+        
+    </script>
+</body>
+</html>

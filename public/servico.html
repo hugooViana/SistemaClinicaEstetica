@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicodetalhado.css">
+    <title>Detalhes do Serviço - Estética</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Seção principal de detalhes do serviço -->
+        <div class="service-details">
+            <!-- Imagem de Ilustração do serviço -->
+            <img id="servicoImagem" class="service-image" src="img/limpeza-de-pele.jpg" alt="Imagem do Serviço">
+            
+            <!-- Conteúdo relacionado ao serviço -->
+            <div class="service-content">
+                <!-- Títulos do serviço -->
+                <h1>Detalhes do Serviço</h1>
+                <h2 id="nomeServico"></h2> <!-- Nome do serviço carregado dinamicamente -->
+                <p id="descricaoServico"></p> <!-- Descrição do serviço -->
+                <p id="precoServico"></p> <!-- Preço do serviço -->
+
+                <!-- Formulário para agendamento do serviço -->
+                <form id="formAgendamento">
+                    <!-- Campo para selecionar a data do agendamento -->
+                    <div>
+                        <label for="dataAgendamento">Data:</label>
+                        <input type="date" id="dataAgendamento" required>
+                    </div>
+                    <!-- Campo para selecionar o horário do agendamento -->
+                    <div>
+                        <label for="horarioAgendamento">Horário:</label>
+                        <select id="horarioAgendamento" required>
+                            <option value="">Selecione um horário</option> <!-- Opção padrão -->
+                        </select>
+                    </div>
+                    <!-- Botão para submeter o agendamento -->
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup exibido após o agendamento -->
+    <div id="popupAgendamento" class="popup">
+        <div class="popup-content">
+            <h3>Serviço adicionado!</h3> <!-- Mensagem de confirmação -->
+            <p>Seu serviço foi adicionado com sucesso. O que você gostaria de fazer agora?</p>
+            <!-- Botão para adicionar mais serviços -->
+            <button id="adicionarMaisServicos">Adicionar mais serviços</button>
+            <!-- Botão para concluir o agendamento -->
+            <button id="concluirAgendamento">Concluir agendamento</button>
+        </div>
+    </div>
+
+    <!-- Script externo para gerenciar eventos e interatividade -->
+    <script src="scripts.js"></script>
+</body>
+</html>

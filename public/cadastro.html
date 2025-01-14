@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Sistema de Estética</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+     <!-- Container principal da página -->
+    <div class="container">
+          <!-- Título principal -->
+        <h1>Cadastro</h1>
+      <!-- Formulário de cadastro -->
+        <form id="cadastroForm">
+             <!-- Campo para nome do usuário -->
+            <input type="text" id="nome" placeholder="Nome" required>
+             <!-- Campo para e-mail do usuário -->
+            <input type="email" id="email" placeholder="Email" required>
+             <!-- Campo para senha -->
+            <input type="password" id="senha" placeholder="Senha" required>
+            <!-- Dropdown para selecionar o tipo de usuário -->
+            <select id="tipo" required>
+                <option value="usuario">Usuário</option>
+                <option value="proprietaria">Proprietário</option>
+            </select>
+            <!-- Botão para envio do formulário -->
+            <button type="submit">Cadastrar</button>
+        </form>
+               <!-- Link para a página de login -->
+        <p>Já tem uma conta?<a href="index.html">Faça login</a></p>
+    </div>
+    <!-- Script externo para funcionalidades do formulário -->
+    <script src="scripts.js"></script>
+    
+</body>
+    
+
+</html>

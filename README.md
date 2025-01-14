@@ -1,7 +1,25 @@
-# Sistema Clinica Estetica
+# Juliana Pretti Estética
+
+
 O principal objetivo deste projeto é desenvolver uma solução de software integrada que simplifique a gestão operacional da clínica de estética especializada. Atualmente, a clínica enfrenta dificuldades no gerenciamento eficaz das finanças, estoque e acompanhamento dos pacientes devido à falta de um sistema unificado. Com uma vasta gama de serviços como botox, tratamentos de pele e bioestimuladores, a falta de organização tem impactado negativamente a tomada de decisões e o crescimento da clínica.
 
 A proposta visa criar uma plataforma intuitiva que centralize o controle de despesas, fluxo de caixa, estoque de produtos e agendamentos de pacientes. Ao automatizar processos e melhorar o gerenciamento das operações, o software proporcionará à proprietária uma visão clara e estratégica do negócio, facilitando a administração e promovendo o desenvolvimento sustentável da clínica.
+
+## Alunos integrantes da equipe
+
+* Hugo Viana Tinoco
+* Petrius Arturo Paglioni
+* Jorge Matheus da Silva Lopes
+* Lucas Carvalho Peres
+* Matheus Pretti de Oliva
+* Gustavo Pimentel Carvalho Costa
+
+## Professores responsáveis
+
+* Cristiano de Macêdo Neto
+* Eveline Alonso Veloso
+* João Caram Santos
+
 ## Descrição Geral do Projeto
 
 O projeto visa o desenvolvimento de uma plataforma digital para a Clínica Estética Juliana Pretti, localizada em Belo Horizonte, com o objetivo de otimizar o processo de agendamento, gestão de serviços e comunicação com os clientes. A clínica enfrenta dificuldades com agendamentos manuais, falta de centralização de informações e ausência de visibilidade online de seus serviços, o que impacta a experiência do cliente e limita seu crescimento. A plataforma proporcionará um atendimento mais organizado, ágil e personalizado, além de ampliar a presença digital da clínica, ajudando a atrair novos clientes e a melhorar a fidelização dos atuais. O projeto, ao automatizar e otimizar processos, tem como objetivo fortalecer o crescimento e a sustentabilidade do negócio.
@@ -60,3 +78,18 @@ Você deverá ver a interface da plataforma da Clínica Estética Juliana Pretti
 Observações Finais
 Banco de Dados: Certifique-se de que o MySQL esteja rodando e acessível antes de iniciar.
 Erros Comuns: Caso ocorram problemas com a execução, verifique se as dependências foram corretamente instaladas e se as credenciais do banco de dados estão corretas.
+
+## Para acessar a plataforma da Clínica Estética Juliana Pretti, siga os passos abaixo:
+
+1. Abrir o Navegador de Internet
+Abra o navegador de sua preferência (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, etc.) no seu computador, tablet ou smartphone.
+
+2. Inserir o Endereço do Site
+Na barra de endereços (a parte superior do navegador), digite o endereço do site da plataforma. O endereço para acesso é: https://plf-es-2024-2-ti3-8981100-grupo-7-qokv.onrender.com
+
+3. Carregar o Site
+Pressione a tecla Enter (ou Ir no teclado do celular) após digitar o endereço.
+O site da Clínica Estética Juliana Pretti será carregado em sua tela.
+
+4. Acessar as Funcionalidades
+Agora que você está na página inicial, poderá explorar os serviços oferecidos, agendar tratamentos ou acessar sua conta caso já seja um usuário registrado.
